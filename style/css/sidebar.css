@@ -1,0 +1,159 @@
+:root {
+    --main-color: linear-gradient(135deg, #8895F4, #3F50FF);
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh; /* Fixed typo from 100v to 100vh */
+    width: 300px;
+    padding: 1rem 1rem;
+    color: #fff;
+    overflow: auto;
+    transition: all 0.5s linear;
+    background: var(--main-color);
+    z-index: 1000;
+}
+
+@media screen and (max-width: 1180px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        transition: all 0.5s linear;
+        z-index: 900; /* Should be less than sidebar's z-index */
+        display: none; /* Hidden by default */
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        bottom: 0;
+        height: 100v; /* Fixed typo from 100v to 100vh */
+        width: 250px;
+        padding: 1rem 1rem;
+        color: #fff;
+        overflow: auto;
+        transition: all 0.3s linear;
+        background: var(--main-color);
+        z-index: 1000;
+    }
+
+    .open {
+        left: 0px; /* Show sidebar */
+    }
+    
+    
+}
+/* Custom scrollbar styles */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Scrollbar color on hover */
+}
+
+/* For Firefox */
+.sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+.sidebar:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.7) transparent;
+}
+
+.brand-logo {
+    text-align: center;
+    font-family: 'Bauhaus 93', sans-serif;
+}
+
+.brand-logo h1 {
+    font-family: 'Bauhaus 93', sans-serif;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.brand-logo h1:hover {
+    transform: scale(1.05);
+}
+
+.sidebar_profile_wrapper {
+    background-color: #ffffff28;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.profile_image {
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.profile_image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sidebar .menu {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sidebar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+
+.sidebar .menu .item a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    padding: 0px 15px;
+    line-height: 60px;
+    overflow: hidden;
+    align-items: center;
+    gap: 1.2rem;
+    border-radius: 15px;
+}
+
+.sidebar .menu .item a:hover {
+    background: #e0e0e058;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.sidebar .menu .item a i {
+    font-size: 1.3rem;
+    
+}
+
+.sidebar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.sidebar .menu .item .sub-menu {
+    background: rgba(216, 208, 255, 0.301);
+    border-radius: 0px 0px 15px 15px;
+    display: none;
+    margin-left: 15px;
+}
+
+
+

@@ -1,0 +1,27 @@
+:root {
+    --main-color: linear-gradient(135deg, #8895F4, #3F50FF);
+}
+
+.profile-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.details-container {
+    align-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.profile_name {
+    font-weight: 700;
+    color: rgb(186, 0, 223);
+}
+
+.smart-card-download {
+    color: #fff;
+    background: var(--main-color);
+}

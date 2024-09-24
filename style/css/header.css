@@ -1,0 +1,63 @@
+:root {
+    --main-color: linear-gradient(135deg, #8895F4, #3F50FF);
+}
+
+.header--wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor:  pointer;
+    border-radius: 50%;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-color);
+    border-radius: 10px;
+    padding: 10px 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.header--wrapper .sidebarToggleTop {
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.header--title {
+    font-size: 30px;
+    color: #fff;
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user--info h1 {
+    font-family: 'Bauhaus 93', sans-serif;
+    color: #fff;
+    transition: all 0.1s linear;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.user--info h1:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 490px) {
+    
+    .user--info .brand-name {
+        display: none;
+    }
+
+    .header--title {
+        font-size: 25px;
+    }
+    
+}

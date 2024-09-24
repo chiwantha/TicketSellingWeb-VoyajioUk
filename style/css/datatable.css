@@ -1,0 +1,179 @@
+:root {
+    --main-color: linear-gradient(135deg, #8895F4, #3F50FF);
+}
+
+
+
+.table--wrapper {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px 8px 8px 8px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1180px) {
+    .table--container {
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+
+    thead {
+        font-size: 15px;
+    }
+}
+
+thead {
+    background: var(--main-color);
+    color: #fff;
+}
+
+th {
+    padding: 15px;
+}
+
+tbody {
+    background: #f2f2f2;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: #fff;
+}
+
+tfoot {
+    background: var(--main-color);
+    font-weight: bold;
+    color: #fff;
+    border-radius: 0 8px 8px 8px;
+    overflow: hidden;
+}
+
+tfoot td {
+    padding: 2px;
+}
+
+.table--wrapper .edit {
+    color: #fff;
+    background: orange;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.table--wrapper .edit:hover {
+    transform: scale(1.05);
+}
+
+.table--wrapper .deactivate {
+    color: #fff;
+    background: tomato;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.table--wrapper .deactivate:hover {
+    transform: scale(1.05);
+}
+
+.table--wrapper .remove {
+    color: #fff;
+    background: rgb(182, 27, 0);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.table--wrapper .remove:hover {
+    transform: scale(1.05);
+}
+
+.table--wrapper .reset {
+    color: #fff;
+    background: orange;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.table--wrapper .reset:hover {
+    transform: scale(1.05);
+}
+
+.table--wrapper .view {
+    color: #fff;
+    background: blue;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.table--wrapper .view:hover {
+    transform: scale(1.05);
+}
+
+.table--wrapper .activate {
+    color: #fff;
+    background: green;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.table--wrapper .activate:hover {
+    transform: scale(1.05);
+}
+
+.badge_container {
+    font-size: 20px;
+}
+
+/* Pagination styles */
+#nav {
+    margin-top: 10px;
+}
+
+#nav a, #nav span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#nav a:hover {
+    background-color: #ddd;
+}
+
+#nav .prev, #nav .next, #nav .first, #nav .last {
+    color: #fff;
+    background: var(--main-color);
+    font-weight: bold;
+}
+
+#nav .page.active {
+    background-color: #333;
+    color: #fff;
+}
